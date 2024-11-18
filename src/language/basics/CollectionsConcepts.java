@@ -1,11 +1,16 @@
 package language.basics;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 public class CollectionsConcepts {
@@ -81,6 +86,7 @@ public class CollectionsConcepts {
 		empNamesArrayList.add("Anusha");
 		empNamesArrayList.add(null);
 		empNamesArrayList.remove("Bharath");
+		empNamesArrayList.remove(3);
 		empNamesArrayList.add(2,"Akshay");
 		System.out.println(empNamesArrayList.size());
 		System.out.println(empNamesArrayList);
@@ -176,6 +182,115 @@ public class CollectionsConcepts {
 		empNamesTreeSet.remove("Bharath");		
 		System.out.println(empNamesTreeSet.size());
 		System.out.println(empNamesTreeSet);
+		
+		
+		/*********************HashMap*************************/
+		System.out.println("*********************HashMap*************************");
+		
+		//Syntax to Initialize: Collection <Key,Value> variable = new Collection<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to get data: variable.get(key);
+		//Syntax to remove the data:variable.remove(value);
+		//Syntax to get the total value : variable.size();
+		
+		//Null Values : Allowed
+		//Null Keys :  Allowed
+		//Order of Storing Values: Random Order
+		
+		Map<String,Integer> empNamesHashMap = new HashMap<String,Integer>();
+		
+		empNamesHashMap.put("Anusha",1);
+		empNamesHashMap.put("Kiran",2);
+		empNamesHashMap.put("Bharath",3);
+		empNamesHashMap.put("Mansi",3);
+		empNamesHashMap.put("Dileep",5);
+		empNamesHashMap.put("Anusha",6);
+		empNamesHashMap.put("Dev",null);
+		empNamesHashMap.put(null,8);
+		System.out.println(empNamesHashMap.size());
+		System.out.println(empNamesHashMap.get("Anusha"));
+		System.out.println(empNamesHashMap);
+		
+		/*********************LinkedHashMap*************************/
+		System.out.println("*********************LinkedHashMap*************************");
+		
+		//Syntax to Initialize: Collection <Key,Value> variable = new Collection<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to get data: variable.get(key);
+		//Syntax to remove the data:variable.remove(value);
+		//Syntax to get the total value : variable.size();
+		
+		//Null Values : Allowed
+		//Null Keys :  Allowed
+		//Order of Storing Values: Random Order
+		
+		Map<String,Integer> empNamesLinkedHashMap = new LinkedHashMap<String,Integer>();
+		
+		empNamesLinkedHashMap.put("Anusha",1);
+		empNamesLinkedHashMap.put("Kiran",2);
+		empNamesLinkedHashMap.put("Bharath",3);
+		empNamesLinkedHashMap.put("Mansi",3);
+		empNamesLinkedHashMap.put("Dileep",5);
+		empNamesLinkedHashMap.put("Anusha",6);
+		empNamesLinkedHashMap.put("Dev",null);
+		empNamesLinkedHashMap.put(null,8);
+		System.out.println(empNamesLinkedHashMap.size());
+		System.out.println(empNamesLinkedHashMap.get("Anusha"));
+		System.out.println(empNamesLinkedHashMap);
+		
+		/*********************TreeMap*************************/
+		System.out.println("*********************TreeMap*************************");
+		
+		//Syntax to Initialize: Collection <Key,Value> variable = new Collection<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to get data: variable.get(key);
+		//Syntax to remove the data:variable.remove(value);
+		//Syntax to get the total value : variable.size();
+		
+		//Null Values : Allowed
+		//Null Keys : Not Allowed
+		//Order of Storing Values: Ascending Order
+		
+		Map<String,Integer> empNamesTreeMap = new TreeMap<String,Integer>();
+		
+		empNamesTreeMap.put("Anusha",1);
+		empNamesTreeMap.put("Kiran",2);
+		empNamesTreeMap.put("Bharath",3);
+		empNamesTreeMap.put("Mansi",3);
+		empNamesTreeMap.put("Dileep",5);
+		empNamesTreeMap.put("Anusha",6);
+		empNamesTreeMap.put("Dev",null);
+//		empNamesTreeMap.put(null,8);
+		System.out.println(empNamesTreeMap.size());
+		System.out.println(empNamesTreeMap.get("Anusha"));
+		System.out.println(empNamesTreeMap);
+		
+		/*********************Hashtable*************************/
+		System.out.println("*********************Hashtable*************************");
+		
+		//Syntax to Initialize: Collection <Key,Value> variable = new Collection<Key,Value>();
+		//Syntax to add data: variable.put(key,value);
+		//Syntax to get data: variable.get(key);
+		//Syntax to remove the data:variable.remove(value);
+		//Syntax to get the total value : variable.size();
+		
+		//Null Values : Not Allowed
+		//Null Keys : Not Allowed
+		//Order of Storing Values: Random Order
+		
+		Map<String,Integer> empNamesHashtable = new Hashtable<String,Integer>();
+		
+		empNamesHashtable.put("Anusha",1);
+		empNamesHashtable.put("Kiran",2);
+		empNamesHashtable.put("Bharath",3);
+		empNamesHashtable.put("Mansi",3);
+		empNamesHashtable.put("Dileep",5);
+		empNamesHashtable.put("Anusha",6);
+//		empNamesHashtable.put("Dev",null);
+//		empNamesHashtable.put(null,8);
+		System.out.println(empNamesHashtable.size());
+		System.out.println(empNamesHashtable.get("Anusha"));
+		System.out.println(empNamesHashtable);
 
 	}
 
