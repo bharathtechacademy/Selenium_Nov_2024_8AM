@@ -1,26 +1,27 @@
 package language.basics;
 
 public class MethodsInJava2 {
-
+	
+	
 	public static void main(String[] args) {
 		
 		MethodsInJava2 obj = new MethodsInJava2();
-		obj.launchBrowserAndLaunchApplication();
+		obj.launchBrowserAndLaunchApplication("Chrome","www.google.com");
 		obj.loginIntoApplication();
 		System.out.println("Execute Test Case 1 Steps Related to HomePage....");
 		obj.logoutAndCloseTheBrowser();
 
-		obj.launchBrowserAndLaunchApplication();
+		obj.launchBrowserAndLaunchApplication("Edge","www.amazon.com");
 		obj.loginIntoApplication();
 		System.out.println("Execute Test Case 2 Steps Related to Fund Transfer Page....");
 		obj.logoutAndCloseTheBrowser();
 
-		obj.launchBrowserAndLaunchApplication();
+		obj.launchBrowserAndLaunchApplication("Firefox","www.yahoo.com");
 		obj.loginIntoApplication();
 		System.out.println("Execute Test Case 3 Steps Related to Login Page....");
 		obj.logoutAndCloseTheBrowser();
 		
-		obj.launchBrowserAndLaunchApplication();
+		obj.launchBrowserAndLaunchApplication("Firefox","www.yahoo.com");
 		obj.loginIntoApplication();
 		System.out.println("Execute Test Case 3 Steps Related to Login Page....");
 		obj.logoutAndCloseTheBrowser();
@@ -36,6 +37,21 @@ public class MethodsInJava2 {
 		System.out.println("Launch the chrome browser");
 		System.out.println("Enter url and launch application");
 	}
+	
+	void launchBrowserAndLaunchApplication(String browserName, String url){
+		System.out.println("Launch the "+browserName+" browser");
+		System.out.println("Enter "+url+" and launch application");
+	}
+	
+//	void launchEdgeBrowserAndLaunchApplication(){
+//		System.out.println("Launch the Edge browser");
+//		System.out.println("Enter url and launch application");
+//	}
+//	
+//	void launchFirefoxBrowserAndLaunchApplication(){
+//		System.out.println("Launch the Firefox browser");
+//		System.out.println("Enter url and launch application");
+//	}
 
 	void loginIntoApplication(){
 		System.out.println("Enter username as Bharath");
