@@ -6,6 +6,8 @@ public abstract class AbstractClass1 {
 	
 	public abstract void printNameAndId(String empName, int empId);	
 	
-	public abstract void printAddress() ;
+	public void printAddress() {
+		System.out.println("Hyderabad");
+	}
 
 }
