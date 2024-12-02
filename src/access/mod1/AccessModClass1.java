@@ -2,7 +2,7 @@ package access.mod1;
 
 public class AccessModClass1 {
 
-	public String name = "Bhargavi";
+	private String name = "Bhargavi";
 
 	public void printEmpId() {
 		System.out.println(1234);
