@@ -34,6 +34,7 @@ public class ArrayConcepts {
 		empGroups[0][1]="Bhargavi";
 				
 		empGroups[1][2]="Mansi";
+		System.out.println(empGroups.length);
 		
 		
 		
